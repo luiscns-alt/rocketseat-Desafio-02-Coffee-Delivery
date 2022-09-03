@@ -1,6 +1,6 @@
+import { rgba } from 'polished'
 import styled from 'styled-components'
 import introBackgroundImg from '../../assets/background--home.svg'
-import { rgba } from 'polished'
 
 export const HomeContainer = styled.section`
   width: 100%;
