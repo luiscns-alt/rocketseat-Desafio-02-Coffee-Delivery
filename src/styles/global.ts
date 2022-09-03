@@ -27,4 +27,10 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-size: ${({ theme }) => theme.textSizes['--text-regular-M']}
   }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 `

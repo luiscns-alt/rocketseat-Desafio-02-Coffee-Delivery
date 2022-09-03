@@ -3,7 +3,12 @@ import { useTheme } from 'styled-components'
 import bannerImg from '../../assets/img--banner.svg'
 import { RegularText, TitleText } from '../../components/Typography'
 import { OurCoffees } from './components/OurCoffees'
-import { BenefitsCard, HomeContainer, IconContainer, InfoWithIconContainer } from './styles'
+import {
+  BenefitsCard,
+  HomeContainer,
+  IconContainer,
+  InfoWithIconContainer,
+} from './styles'
 
 export function Home() {
   const { colors } = useTheme()
@@ -12,42 +17,42 @@ export function Home() {
     <section>
       <HomeContainer>
         <div>
-          <TitleText size='XL'>
+          <TitleText size="XL">
             Encontre o café perfeito para qualquer hora do dia
           </TitleText>
-          <RegularText as='h3' size='L' color='subtitle'>
+          <RegularText as="h3" size="L" color="subtitle">
             Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
             hora
           </RegularText>
           <BenefitsCard>
             <InfoWithIconContainer>
               <IconContainer iconBg={colors['--yellow-dark']}>
-                <ShoppingCart weight='fill' />
+                <ShoppingCart weight="fill" />
               </IconContainer>
               Compra simples e segura
             </InfoWithIconContainer>
             <InfoWithIconContainer>
               <IconContainer iconBg={colors['--text']}>
-                <Package weight='fill' />
+                <Package weight="fill" />
               </IconContainer>
               Embalagem mantém o café intacto
             </InfoWithIconContainer>
             <InfoWithIconContainer>
               <IconContainer iconBg={colors['--yellow']}>
-                <Timer weight='fill' />
+                <Timer weight="fill" />
               </IconContainer>
               Entrega rápida e rastreada
             </InfoWithIconContainer>
             <InfoWithIconContainer>
               <IconContainer iconBg={colors['--purple']}>
-                <Coffee weight='fill' />
+                <Coffee weight="fill" />
               </IconContainer>
               O café chega fresquinho até você
             </InfoWithIconContainer>
           </BenefitsCard>
         </div>
         <div>
-          <img src={bannerImg} alt='' />
+          <img src={bannerImg} alt="" />
         </div>
       </HomeContainer>
       <OurCoffees />

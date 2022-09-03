@@ -3,7 +3,14 @@ import { useState } from 'react'
 import { QuantityInput } from '../../../../components/QuantityInput'
 import { RegularText, TitleText } from '../../../../components/Typography'
 import { formatMoney } from '../../../../utils/format'
-import { AddCartWrapper, CardFooter, CoffeeCardContainer, Description, Name, Tags } from './styles'
+import {
+  AddCartWrapper,
+  CardFooter,
+  CoffeeCardContainer,
+  Description,
+  Name,
+  Tags,
+} from './styles'
 
 export interface Coffee {
   id: number
@@ -45,8 +52,8 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
 
       <CardFooter>
         <div>
-          <RegularText size='S'>R$</RegularText>
-          <TitleText size='M' color='text' as='strong'>
+          <RegularText size="S">R$</RegularText>
+          <TitleText size="M" color="text" as="strong">
             {formattedPrice}
           </TitleText>
         </div>
@@ -58,7 +65,7 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
             quantity={quantity}
           />
           <button>
-            <ShoppingCart weight='fill' size={22} />
+            <ShoppingCart weight="fill" size={22} />
           </button>
         </AddCartWrapper>
       </CardFooter>

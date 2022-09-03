@@ -68,8 +68,7 @@ const data = [
     altText: 'Latte',
     tags: ['tradicional', 'com leite'],
     title: 'Latte',
-    text:
-      'Uma dose de café expresso com o dobro de leite e espuma cremosa',
+    text: 'Uma dose de café expresso com o dobro de leite e espuma cremosa',
     price: 9.9,
   },
   {
@@ -78,8 +77,7 @@ const data = [
     altText: 'Capuccino',
     tags: ['tradicional', 'com leite'],
     title: 'Capuccino',
-    text:
-      'Bebida com canela feita de doses iguais de café, leite e espuma',
+    text: 'Bebida com canela feita de doses iguais de café, leite e espuma',
     price: 9.9,
   },
   {
@@ -88,8 +86,7 @@ const data = [
     altText: 'Macchiato',
     tags: ['tradicional', 'com leite'],
     title: 'Macchiato',
-    text:
-      'Café expresso misturado com um pouco de leite quente e espuma',
+    text: 'Café expresso misturado com um pouco de leite quente e espuma',
     price: 9.9,
   },
   {
@@ -115,8 +112,7 @@ const data = [
     altText: 'Cubano',
     tags: ['especial', 'alcoólico', 'gelado'],
     title: 'Cubano',
-    text:
-      'Drink gelado de café expresso com rum, creme de leite e hortelã',
+    text: 'Drink gelado de café expresso com rum, creme de leite e hortelã',
     price: 9.9,
   },
   {
@@ -151,7 +147,7 @@ const data = [
 export function OurCoffees() {
   return (
     <OurCoffeesContaine>
-      <TitleText size='L' color='subtitle'>
+      <TitleText size="L" color="subtitle">
         Nossos cafés
       </TitleText>
       <CoffeeGrid>

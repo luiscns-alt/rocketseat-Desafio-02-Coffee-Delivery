@@ -16,6 +16,7 @@ export const defaultTheme = {
     '--yellow': '#DBAC2C',
     '--yellow-dark': '#C47F17',
     '--yellow-light': '#F1E9C9',
+    '--error': 'red',
   },
   textSizes: {
     '--title-XL': '4.8rem',

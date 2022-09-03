@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 export interface QuantityInputContainerProps {
-  size: 'medium' | 'small';
+  size: 'medium' | 'small'
 }
 
 export const QuantityInputContainer = styled.div<QuantityInputContainerProps>`
@@ -29,15 +29,15 @@ export const QuantityInputContainer = styled.div<QuantityInputContainerProps>`
   }
 
   ${({ size }) =>
-          size === 'medium' &&
-          css`
-            padding: 0.8rem;
-          `}
+    size === 'medium' &&
+    css`
+      padding: 0.8rem;
+    `}
   ${({ size }) =>
-          size === 'small' &&
-          css`
-            padding: 0.48rem 0.8rem;
-          `}
+    size === 'small' &&
+    css`
+      padding: 0.48rem 0.8rem;
+    `}
 `
 
 export const IconWrapper = styled.button.attrs({

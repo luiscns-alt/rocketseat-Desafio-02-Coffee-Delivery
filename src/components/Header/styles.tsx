@@ -68,10 +68,10 @@ export const HeaderButton = styled.button<HeaderButtonProps>`
     }
   `}
   ${({ variant }) =>
-          variant === 'purple' &&
-          css`
-            svg {
-              color: ${({ theme }) => theme.colors[`--${variant}`]};
-            }
-          `}
+    variant === 'purple' &&
+    css`
+      svg {
+        color: ${({ theme }) => theme.colors[`--${variant}`]};
+      }
+    `}
 `
