@@ -31,10 +31,10 @@ export const InputStyleContainer = styled.div<InputContainerProps>`
   }
 
   ${({ theme, hasError }) =>
-          hasError &&
-          css`
-            border-color: ${theme.colors['--error']};
-          `}
+    hasError &&
+    css`
+      border-color: ${theme.colors['--error']};
+    `}
 `
 
 export const InputStyled = styled.input`
