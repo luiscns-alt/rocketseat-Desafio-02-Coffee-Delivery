@@ -1,12 +1,31 @@
 import { Clock, CurrencyDollar, MapPin } from 'phosphor-react'
+import { useEffect } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { useTheme } from 'styled-components'
 import Success from '../../assets/img--success.svg'
 import { OrderInfo } from '../../components/OrderInfo'
 import { RegularText, TitleText } from '../../components/Typography'
+import { OrderData } from '../CoffeeCheckout'
+import { paymentMethods } from '../CoffeeCheckout/components/PaymentOptions'
 import { CoffeeSuccessContainer, OrderDetailsContainer } from './styles'
-import { useTheme } from 'styled-components'
+
+interface LocationType {
+  state: OrderData
+}
 
 export function CoffeeSuccess() {
   const { colors } = useTheme()
+  const { state } = useLocation() as unknown as LocationType
+
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if (!state) {
+      navigate('/')
+    }
+  }, [])
+
+  if (!state) return <></>
 
   return (
     <CoffeeSuccessContainer>
@@ -24,9 +43,9 @@ export function CoffeeSuccess() {
             iconBg={colors['--purple']}
             text={
               <RegularText>
-                Entrega em <strong>street</strong>, number
+                Entrega em <strong>{state.street}</strong>, {state.number}
                 <br />
-                district - city, uf
+                {state.district} - {state.city}, {state.uf}
               </RegularText>
             }
           />
@@ -50,7 +69,7 @@ export function CoffeeSuccess() {
               <RegularText>
                 Pagamento na entrega
                 <br />
-                <strong>lorem</strong>
+                <strong>{paymentMethods[state.paymentMethod].label}</strong>
               </RegularText>
             }
           />

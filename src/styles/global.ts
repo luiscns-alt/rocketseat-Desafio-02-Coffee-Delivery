@@ -33,4 +33,21 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-appearance: none;
     margin: 0;
   }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: ${({ theme }) => theme.colors['--button']}
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background: ${({ theme }) => theme.colors['--purple']}
+  }
 `
