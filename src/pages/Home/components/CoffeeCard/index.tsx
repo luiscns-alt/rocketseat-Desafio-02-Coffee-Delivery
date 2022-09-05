@@ -2,6 +2,7 @@ import { ShoppingCart } from 'phosphor-react'
 import { useState } from 'react'
 import { QuantityInput } from '../../../../components/QuantityInput'
 import { RegularText, TitleText } from '../../../../components/Typography'
+import { useCart } from '../../../../Hooks/useCart'
 import { formatMoney } from '../../../../utils/format'
 import {
   AddCartWrapper,
@@ -27,6 +28,7 @@ interface CoffeeProps {
 }
 
 export function CoffeeCard({ coffee }: CoffeeProps) {
+  const { addCoffeeToCart } = useCart()
   const [quantity, setQuantity] = useState(1)
   const formattedPrice = formatMoney(coffee.price)
 
@@ -36,6 +38,14 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
 
   function handleDecrease() {
     setQuantity((state) => state - 1)
+  }
+
+  function handleAddToCart() {
+    const coffeeToAdd = {
+      ...coffee,
+      quantity,
+    }
+    addCoffeeToCart(coffeeToAdd)
   }
 
   return (
@@ -64,7 +74,7 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
             onDecrease={handleDecrease}
             quantity={quantity}
           />
-          <button>
+          <button onClick={handleAddToCart}>
             <ShoppingCart weight="fill" size={22} />
           </button>
         </AddCartWrapper>

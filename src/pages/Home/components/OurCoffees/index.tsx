@@ -18,7 +18,7 @@ import { CoffeeGrid, OurCoffeesContaine } from './styles'
 
 const data = [
   {
-    id: 1,
+    id: 0,
     imgSrc: imgTradicional,
     altText: 'Expresso Tradicional',
     tags: ['tradicional'],
@@ -27,7 +27,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 2,
+    id: 1,
     imgSrc: imgAmericano,
     altText: 'Expresso Americano',
     tags: ['tradicional'],
@@ -36,7 +36,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 3,
+    id: 2,
     imgSrc: imgCremoso,
     altText: 'Expresso Cremoso',
     tags: ['tradicional'],
@@ -45,7 +45,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 4,
+    id: 3,
     imgSrc: imgGelado,
     altText: 'Expresso Gelado',
     tags: ['tradicional', 'gelado'],
@@ -54,7 +54,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 5,
+    id: 4,
     imgSrc: imgCafeLeite,
     altText: 'Café com Leite',
     tags: ['tradicional', 'com leite'],
@@ -63,7 +63,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 6,
+    id: 5,
     imgSrc: imgLatte,
     altText: 'Latte',
     tags: ['tradicional', 'com leite'],
@@ -72,7 +72,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 7,
+    id: 6,
     imgSrc: imgCapuccino,
     altText: 'Capuccino',
     tags: ['tradicional', 'com leite'],
@@ -81,7 +81,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 8,
+    id: 7,
     imgSrc: imgMacchiato,
     altText: 'Macchiato',
     tags: ['tradicional', 'com leite'],
@@ -90,7 +90,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 9,
+    id: 8,
     imgSrc: imgMocaccino,
     altText: 'Mocaccino',
     tags: ['tradicional', 'com leite'],
@@ -99,7 +99,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 10,
+    id: 9,
     imgSrc: imgChocolateQuente,
     tags: ['especial', 'com leite'],
     title: 'Chocolate Quente',
@@ -107,7 +107,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 11,
+    id: 10,
     imgSrc: imgCubano,
     altText: 'Cubano',
     tags: ['especial', 'alcoólico', 'gelado'],
@@ -116,7 +116,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 12,
+    id: 11,
     imgSrc: imgHavaiano,
     altText: 'Havaiano',
     tags: ['especial'],
@@ -125,7 +125,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 13,
+    id: 12,
     imgSrc: imgArabe,
     altText: 'Árabe',
     tags: ['especial'],
@@ -134,7 +134,7 @@ const data = [
     price: 9.9,
   },
   {
-    id: 14,
+    id: 13,
     imgSrc: imgIrlandes,
     altText: 'Irlandês',
     tags: ['especial', 'alcoólico'],

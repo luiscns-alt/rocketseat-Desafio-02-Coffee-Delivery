@@ -45,8 +45,8 @@ export const HeaderButton = styled.button<HeaderButtonProps>`
 
   span {
     position: absolute;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     top: calc(-1.25rem / 2);
     right: calc(-1.25rem / 2);

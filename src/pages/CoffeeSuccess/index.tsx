@@ -55,7 +55,7 @@ export function CoffeeSuccess() {
             }
           />
         </OrderDetailsContainer>
-        <img src={Success} alt='Order Confirmed Success'/>
+        <img src={Success} alt="Order Confirmed Success" />
       </section>
     </CoffeeSuccessContainer>
   )
